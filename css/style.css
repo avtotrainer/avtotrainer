@@ -70,3 +70,15 @@ input[type="submit"] {
 
 /* Подключение UKIT3 из сети */
 @import url('https://unpkg.com/ukit@3.0.0-beta/dist/css/ukit.min.css');
+@import url("//cdn.web-fonts.ge/fonts/bpg-arial/css/bpg-arial.min.css");
+@import url("//cdn.web-fonts.ge/fonts/bpg-arial-caps/css/bpg-arial-caps.min.css");
+
+h1 {
+
+    font-family: "BPG Arial Caps", sans-serif;
+}
+
+body {
+    font-family: "BPG Arial", Arial, sans-serif; /* Замените на выбранный вами шрифт */
+  
+}
