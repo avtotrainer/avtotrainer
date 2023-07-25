@@ -1,3 +1,5 @@
+@import url("//cdn.web-fonts.ge/fonts/bpg-arial/css/bpg-arial.min.css");
+@import url("//cdn.web-fonts.ge/fonts/bpg-arial-caps/css/bpg-arial-caps.min.css");
 /* Сброс стандартных стилей */
 body, h1, h2, h3, h4, h5, h6, p, ul, li, figure, figcaption {
     margin: 0;
@@ -70,8 +72,7 @@ input[type="submit"] {
 
 /* Подключение UKIT3 из сети */
 @import url('https://unpkg.com/ukit@3.0.0-beta/dist/css/ukit.min.css');
-@import url("//cdn.web-fonts.ge/fonts/bpg-arial/css/bpg-arial.min.css");
-@import url("//cdn.web-fonts.ge/fonts/bpg-arial-caps/css/bpg-arial-caps.min.css");
+
 
 h1 {
 
