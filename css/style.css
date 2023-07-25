@@ -97,7 +97,7 @@ header {
 /* Стили для контейнера с фото и текстом */
 .profile-wrapper {
     display: flex; /* Используем flex-контейнер */
-    /* align-items: center; Выравнивание элементов по вертикали */
+    align-items: center; 
 }
 
 /* Стили для кружка с фото */
