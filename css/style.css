@@ -1,3 +1,72 @@
-
-    font-family: "BPG Banner Caps", sans-serif;
+/* Сброс стандартных стилей */
+body, h1, h2, h3, h4, h5, h6, p, ul, li, figure, figcaption {
+    margin: 0;
+    padding: 0;
 }
+
+body {
+    font-family: Arial, sans-serif; /* Замените на выбранный вами шрифт */
+    font-size: 16px; /* Размер базового шрифта */
+    line-height: 1.6; /* Межстрочное расстояние */
+}
+
+ul {
+    list-style: none;
+}
+
+/* Добавим стили для хедера и футера, чтобы они были видны на странице */
+header, footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/* Стили для основных разделов */
+#about-me, #services, #testimonials, #contact {
+    padding: 40px;
+}
+
+/* Стили для заголовков разделов */
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Добавим стили для формы обратной связи */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+input[type="text"], textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Подключение UKIT3 из сети */
+@import url('https://unpkg.com/ukit@3.0.0-beta/dist/css/ukit.min.css');
