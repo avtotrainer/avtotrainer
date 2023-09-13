@@ -35,10 +35,11 @@ ul {
 header, footer {
     background-color: var(--accent-color-1);
     padding: 20px;
+    background: linear-gradient(to right, #3774a7,#ffd343)
 }
 
 /* ძირითადი განყოფილებების სტილები */
-#home, #traing, #contact, #about  {
+#home, #traning, #contact, #about  {
     padding: 40px;
 }
 
@@ -149,13 +150,26 @@ header {
 }
 
 .centre-title {
+    display: flex;
     flex:1 1 70%; /* სივის სათაურსაც ვაკეთებთ ფლექს */
     align-items: center; /* ვაცენტრებთ ვერტიკალურად */
     justify-content: center; 
     flex-grow: 1; 
     text-align: center;
+    
 }
 
+.centre-title h1 {
+    font-size: 60px;
+    font-family: "BPG Arial Caps", sans-serif;
+    color: var(--secondary-color);
+    letter-spacing: 40px;
+}
+.centre-title h2 {
+    font-size: 40px;
+    font-family: "BPG Arial Caps", sans-serif;
+    color: var(--secondary-color);
+}
 nav {
     display: flex;
     justify-content: center;
@@ -239,6 +253,7 @@ nav li a:visited {
     justify-content: space-between;
     flex-direction: column;
     flex-wrap: wrap;
+    padding: 40px;
 }
 
 .courses-row {
