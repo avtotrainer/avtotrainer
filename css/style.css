@@ -120,7 +120,9 @@ header {
     padding: 20px;
     display: flex; /* header-ს ვაკეთებთ flex კონტეინერად */
     flex-direction: column;
-    /* align-items: center; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 /* ფოტოს და ტექსტის სტილის კონტეინერი */
 
