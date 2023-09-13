@@ -1,33 +1,49 @@
 @import url("//cdn.web-fonts.ge/fonts/bpg-arial/css/bpg-arial.min.css");
 @import url("//cdn.web-fonts.ge/fonts/bpg-arial-caps/css/bpg-arial-caps.min.css");
-/* Сброс стандартных стилей */
+@import url("//cdn.web-fonts.ge/fonts/bpg-le-studio-04-caps/css/bpg-le-studio-04-caps.min.css");
+@import url("//cdn.web-fonts.ge/fonts/bpg-banner-caps/css/bpg-banner-caps.min.css");
+
+:root {
+    --primary-color: #2F70AF;    /* ძირითადი ფერი 1 */
+    --secondary-color: #00457E;  /* ძირითადი ფერი 2 */
+    --accent-color: #806491;     /* აქცენტის ფერი 1 */
+    --accent-color-1: #dfdfd3; 
+    --text-color: #02315E;       /* Цвет текста */
+    --background-color: #eee5e6; /* Цвет фона */
+}
+  
+
+/* ბრაუზერის სტილების განულება */
 body, h1, h2, h3, h4, h5, h6, p, ul, li, figure, figcaption {
     margin: 0;
     padding: 0;
+    color: var(--text-color);
 }
 
 body {
-    font-family: Arial, sans-serif; /* Замените на выбранный вами шрифт */
-    font-size: 16px; /* Размер базового шрифта */
-    line-height: 1.6; /* Межстрочное расстояние */
+    font-family: Arial, sans-serif; /* ეს შრიფტი შეგიძლიათ შეცვალოთ სასურველი შრიფტით, მე ქვემოთ შევცვალე */
+    font-size: 16px; /* შრიფტის საბაზო ზომა */
+    line-height: 1.6; /* ხაზებშორის დაშორება */
+    background-color: var(--background-color);
 }
 
 ul {
     list-style: none;
 }
 
-/* Добавим стили для хедера и футера, чтобы они были видны на странице */
+/* ჰედერ-ფუტერის ფერებით გამორჩევა */
 header, footer {
-    background-color: #f2f2f2;
+    background-color: var(--accent-color-1);
     padding: 20px;
 }
 
-/* Стили для основных разделов */
-#about-me, #services, #testimonials, #contact {
+/* ძირითადი განყოფილებების სტილები */
+#goal, #education, #testimonials, #experience, #skills, #languages, #certificats, #recomendators, #projects  {
     padding: 40px;
 }
 
-/* Стили для заголовков разделов */
+
+/* სათაურების სტილები1 */
 h1 {
     font-size: 32px;
     margin-bottom: 20px;
@@ -43,7 +59,7 @@ h3 {
     margin-bottom: 10px;
 }
 
-/* Добавим стили для формы обратной связи */
+/* ფორმის სტილები */
 form {
     display: flex;
     flex-direction: column;
@@ -70,13 +86,18 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-/* Подключение UKIT3 из сети */
+/* Подключение UKIT3-ს ჩართვა ინტერნეტიდან, ეს არის ფრეივორკი, ბოტსრეპის მსგავსი, არანაკლები */
 @import url('https://unpkg.com/ukit@3.0.0-beta/dist/css/ukit.min.css');
 
 
 h1 {
 
     font-family: "BPG Arial Caps", sans-serif;
+}
+
+h2 {
+
+    font-family: "BPG LE Studio 04 Caps", sans-serif;
 }
 
 h4 {
@@ -86,45 +107,47 @@ h4 {
 
 
 body {
-    font-family: "BPG Arial", Arial, sans-serif; /* Замените на выбранный вами шрифт */
+    font-family: "BPG Arial", Arial, sans-serif; /* მე ვავჯობინე ფრეივორკის დამატების შემდეგ შემეცვალა*/
   
 }
 
 
-//* Сброс стандартных стилей */
-/* ... */
 
-/* Добавим стили для хедера и футера, чтобы они были видны на странице */
+
+
 header {
-    background-color: #f2f2f2;
+    background-color: var(--accent-color-1);
     padding: 20px;
+    display: flex; /* header-ს ვაკეთებთ flex კონტეინერად */
+    flex-direction: column;
+    /* align-items: center; */
 }
+/* ფოტოს და ტექსტის სტილის კონტეინერი */
 
-/* Стили для контейнера с фото и текстом */
+
 .profile-wrapper {
-    display: flex; /* Используем flex-контейнер */
-    align-items: center; 
+    display: flex; /* header-ს ვაკეთებთ flex კონტეინერად */
+    justify-content: space-between; /* შვილებზე სივრცეს ვანაწილებთ ერნაირად */
 }
-
-/* Стили для кружка с фото */
+/* ფოტოს რკალის სტილი */
 .profile-pic {
-    width: 200px; /* Изменим ширину фото на 200px */
+    width: 200px; /* ფოტოს სიგანე  200px */
     height: 200px;
-    border-radius: 50%; /* Создание круглой формы */
+    border-radius: 50%; /* მრგვალი ფორმის შექმნა */
     overflow: hidden;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Небольшая тень для эффекта поднятия */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* პატარა ჩრდილი ამობურცული ეფექტის შესაქმნელად */
 }
 
 .profile-pic img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Подгонка фото внутри кружка */
-    object-position: center; /* Центрирование фото в кружке */
+    object-fit: cover; /* ფოტოს რკალში ჩასმა */
+    object-position: center; /* ფოტოს რკალში დაცენტრება */
 }
 
-/* Стили для текстовой информации */
+/* ტექსტური კონტენტის სტილები */
 .profile-text {
-    margin-left: 20px; /* Добавляем отступ слева от фото */
+    margin-left: 50px; /* ფოტოს მარცხნივ არის დამატება */
 }
 
 .profile-text h1 {
@@ -136,3 +159,60 @@ header {
     font-size: 16px;
 }
 
+.cv-title {
+    display: flex; /* სივის სათაურსაც ვაკეთებთ ფლექს */
+    align-items: center; /* ვაცენტრებთ ვერტიკალურად */
+    justify-content: center; /* ტექსტს ვაცენტრებთ ჰორიზონტალურად */
+    flex-grow: 1; /* კონტეინერში დარჩენილი ადგილი აითვისოს მთლიანად */
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav li a {
+    text-decoration: none;
+    font-family: "BPG Banner Caps", sans-serif;
+    color: var(--secondary-color);
+}
+
+nav li a:hover {
+    color: var(--primary-color);
+}
+
+nav li a:visited {
+    color: var(--accent-color);
+}
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    font-size: 24px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.contact-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
