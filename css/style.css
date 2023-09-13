@@ -233,3 +233,26 @@ nav li a:visited {
     max-height: 150px;
     width: auto;
 }
+
+.courses {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.courses-row {
+    display: flex;
+    
+}
+.courses-row article {
+    flex: 0 0 calc(50% - 50px);
+    margin-right: 50px;
+}
+.courses-row:last-child {
+    margin-right: 0;
+}
+
+.courses-row p {
+    text-align: justify;
+}
