@@ -33,7 +33,7 @@ ul {
 
 /* ჰედერ-ფუტერის ფერებით გამორჩევა */
 header, footer {
-    background-color: var(--accent-color-1);
+    /* background-color: var(--accent-color-1); */
     padding: 20px;
     background: linear-gradient(to right, #3774a7,#ffd343)
 }
@@ -88,7 +88,7 @@ input[type="submit"] {
 }
 
 /* Подключение UKIT3-ს ჩართვა ინტერნეტიდან, ეს არის ფრეივორკი, ბოტსრეპის მსგავსი, არანაკლები */
-@import url('https://unpkg.com/ukit@3.0.0-beta/dist/css/ukit.min.css');
+/* @import url('https://unpkg.com/ukit@3.0.0-beta/dist/css/ukit.min.css'); */
 
 
 h1 {
