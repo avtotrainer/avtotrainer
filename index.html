@@ -6,7 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ტრენინგები</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.6/css/uikit.min.css" />
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.26/dist/css/uikit.min.css" />
+
+    <!-- ჩემი CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -24,20 +27,50 @@
             </div>
         </div>
         
+        <div class="uk-container">
+            <nav class="uk-navbar">
         
+                <!-- Лого и название компании, если необходимо -->
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo" href="#"><img src="pic/py-logo.png" alt="Your Logo">
+                    </a>
+                </div>
+        
+                <!-- Иконка "сэндвич" для мобильных устройств -->
+                <div class="uk-navbar-right uk-hidden@m">
+                    <a class="uk-navbar-toggle" uk-toggle="target: #offcanvas-nav"><span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left"></span></a>
+                </div>
+        
+                <!-- Ссылки на страницы -->
+                <div class="uk-navbar-right uk-visible@m">
+                    <ul class="uk-navbar-nav">
+                        <li><a href="#home">ᲛᲗᲐᲕᲐᲠᲘ</a></li>
+                        <li><a href="#traning">ᲢᲠᲔᲜᲘᲜᲒᲔᲑᲘ</a></li>
+                        <li><a href="#contact">ᲙᲝᲜᲢᲐᲥᲢᲘ</a></li>
+                        <li><a href="#about">ᲩᲕᲔᲜᲡ ᲨᲔᲡᲐᲮᲔᲑ</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        
+        <!-- Offcanvas меню для мобильных устройств -->
+        <div id="offcanvas-nav" uk-offcanvas>
+            <div class="uk-offcanvas-bar">
+                <ul class="uk-nav uk-nav-default">
+                    <li><a href="#home">ᲛᲗᲐᲕᲐᲠᲘ</a></li>
+                    <li><a href="#traning">ᲢᲠᲔᲜᲘᲜᲒᲔᲑᲘ</a></li>
+                    <li><a href="#contact">ᲙᲝᲜᲢᲐᲥᲢᲘ</a></li>
+                    <li><a href="#about">ᲩᲕᲔᲜᲡ ᲨᲔᲡᲐᲮᲔᲑ</a></li>
+                </ul>
+            </div>
+        </div> 
     </header>
-    <nav>
-        <ul>
-            <li><a href="#home">მთავარი</a></li>
-            <li><a href="#traning">ტრენინგები</a></li>
-            <li><a href="#contact">კონტაქტი</a></li>
-            <li><a href="#about">ჩვენს შესახებ</a></li>
-        </ul>
-    </nav>
-    <main>
+
+    
+    <main class="uk-container">
         <section id="top"></section>
         
-        <section id="home" class="uk-container">
+        <section id="home">
             <h2>სერვისი</h2>
             <hr>
             <div class="uk-child-width-1-3@m uk-child-width-1-1" uk-grid>
@@ -66,7 +99,7 @@
             </div>
         </section>
         
-        <section id="traning" class="uk-container">
+        <section id="traning">
             <h2>აქტიური კურსები</h2>
             <hr>
             <div class="uk-child-width-1-2@m uk-child-width-1-1" uk-grid>
@@ -74,7 +107,7 @@
                     <article>
                         
                         <h3>ᲤᲐᲘᲢᲝᲜ ᲯᲣᲜᲘᲝᲠᲘ</h3>
-                        <H5>ᲐᲡᲐᲙᲘ: 9-13 ᲬᲔᲚᲘ</H5>
+                        <H5><i class="uk-icon uk-icon-student"></i>: 9-13 ᲬᲔᲚᲘ</H5>
                         <P>პროგრამირების ენა Python-ის საწყისები. კურსის ტიპი შერეული(პირისპირ და ონლაინ)</P>
                         <p>საჭირო აქსესუარი - პერსონალური კომპიუტერი</p>
                         <p>პირისპირ გაკვეთილი 4 თვეში (კვირა დღე, ხანგრძლივობა 1 სთ.)</p>
@@ -190,8 +223,9 @@
             }
         });
     </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.6/js/uikit.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.6/js/uikit-icons.min.js"></script>
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.26/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.26/dist/js/uikit-icons.min.js"></script>
 
 </body>
 
