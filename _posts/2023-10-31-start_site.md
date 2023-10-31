@@ -6,6 +6,7 @@ category: learning
 author: ავთანდილ ფანგანი
 tags: [jekyll]
 summary: ეს არ ვიცი რა არის
+slug: site_was_born
 ---
 
 ## ᲠᲝᲒᲝᲠ ᲓᲐᲘᲑᲐᲓᲐ ᲡᲐᲘᲢᲘ
