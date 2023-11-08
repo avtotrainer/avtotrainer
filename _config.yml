@@ -22,20 +22,20 @@ defaults:
       layout: "post"
 
 # Настройки для Markdown и syntax highlighting
-markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    css_class: "highlight"
+# markdown: kramdown
+# kramdown:
+  # input: GFM
+  # syntax_highlighter: rouge
+  # syntax_highlighter_opts:
+    # css_class: "highlight"
 
 # Конфигурация темы (если используется тема)
-theme: minima
+# theme: minima
 
 # Настройки плагинов
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+# plugins:
+  # - jekyll-feed
+  # - jekyll-seo-tag
 
 # Настройки вывода ошибок
-show_exceptions: true
+# show_exceptions: true
