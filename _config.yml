@@ -1,0 +1,41 @@
+# Название вашего сайта
+title: ᲗᲔᲚᲐᲕᲔᲚᲘ
+
+# Описание вашего сайта
+description: ᲛᲔ ᲕᲐᲠ ᲐᲕᲗᲝ ᲤᲐᲜᲒᲐᲜᲘ ᲓᲐ ᲔᲡ ᲡᲐᲘᲢᲘ ᲐᲠᲘᲡ ᲩᲔᲛᲡ ᲓᲝᲛᲔᲘᲜᲖᲔ ᲓᲐᲨᲔᲜᲔᲑᲣᲚᲘ
+
+# Путь к корневому каталогу вашего сайта на GitHub Pages
+baseurl: ""
+
+# Язык сайта
+lang: en
+
+# Структура permalink
+permalink: pretty
+
+# Настройки для отображения постов
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Настройки для Markdown и syntax highlighting
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: "highlight"
+
+# Конфигурация темы (если используется тема)
+theme: minima
+
+# Настройки плагинов
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Настройки вывода ошибок
+show_exceptions: true
