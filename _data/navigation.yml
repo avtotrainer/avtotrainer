@@ -56,3 +56,22 @@ es-ES:
   <<: *DEFAULT_ES
 es-CO:
   <<: *DEFAULT_ES
+
+# Georgian
+# -----------------
+ge: &DEFAULT_GE
+  nav:
+    - title: "ᲡᲔᲠᲕᲘᲡᲘ"
+      section: services
+    - title: "ᲞᲝᲠᲢᲤᲝᲚᲘᲝ"
+      section: portfolio
+    - title: "ᲩᲕᲔᲜᲡ ᲨᲔᲡᲐᲮᲔᲑ"
+      section: about
+    - title: "ᲥᲠᲝᲜᲝᲚᲝᲒᲘᲐ"
+      section: timeline
+    - title: "ᲒᲣᲜᲓᲘ"
+      section: team
+    - title: "ᲙᲝᲜᲢᲐᲥᲢᲘ"
+      section: contact
+ge-GE:
+  <<: *DEFAULT_GE
